@@ -11,7 +11,11 @@ const routes: Routes = [
 	{
         path: '*',
         redirectTo: 'auth/login'
-	},
+  },
+  {
+        path: 'test',
+      redirectTo: 'auth/login'  
+    },
 	{
 		path: 'auth/login',
 		canActivate: [AuthorizedGuard],
